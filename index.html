@@ -7,28 +7,30 @@
     <style>
 
         /*
-            Pseudo-Class Selectors
-            Select the state of the element
+            Pseudo-Class Selectors - Part 2
         */
+        /*li:first-child {*/
+        /*    color: red;*/
+        /*}*/
 
-        h1:hover {
-            background: yellow;
-        }
+        /*li:last-child {*/
+        /*    color: mediumpurple;*/
+        /*}*/
 
-        a:visited {
-            color: red;
-        }
+        /*li:nth-child(3) {*/
+        /*    color: orange;*/
+        /*}*/
 
-        a:link {
+        /*li:nth-child(4) {*/
+        /*    color: green;*/
+        /*}*/
+
+        /*li:nth-last-child(5) {*/
+        /*    color: red;*/
+        /*}*/
+
+        li:only-child {
             color: orange;
-        }
-
-        h1:active {
-            background: red;
-        }
-
-        input:focus {
-            background: dodgerblue;
         }
 
     </style>
@@ -36,19 +38,24 @@
 </head>
 <body>
 
-    <h1>Welcome to IJSE</h1>
+    <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Go</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>C#</li>
+    </ul>
 
-    <a href="https://ijse.lk">IJSE</a> <br>
-    <a href="https://www.cardiffmet.ac.uk">Cardiff Met</a> <br>
-    <a href="https://www.bolton.ac.uk">UoBolton</a> <br>
-    <a href="https://www.londonmet.ac.uk">London Met</a> <br>
-    <a href="https://www.deakin.edu.au">Deakin University</a> <br>
-    <a href="https://www.sydney.edu.au">University Of Sydney</a> <br>
+    <br>
+    <br>
 
-    <form>
-        <label for="name">Name</label> <br>
-        <input type="text" id="name" name="name" placeholder="Enter your name">
-    </form>
+    <ul>
+        <li>Java</li>
+<!--        <li>Python</li>-->
+    </ul>
+
+
 
 </body>
 </html>
