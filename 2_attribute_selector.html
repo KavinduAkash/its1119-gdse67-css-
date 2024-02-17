@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS</title>
+
+  <style>
+
+    /* -- Attribute Selector -- */
+    /*[href] {*/
+    /* background: pink;*/
+    /*}*/
+
+    /*[myattr] {*/
+    /*    background: orange;*/
+    /*}*/
+
+    /* -- Attribute selector with attribute value ( = ) -- */
+
+    /*[href='https://ijse.lk'] {*/
+    /*    background: red;*/
+    /*}*/
+
+    /*[href='https://www.cardiffmet.ac.uk'] {*/
+    /*    background: dodgerblue;*/
+    /*}*/
+
+    /* -- Attribute selector with attribute starting value ( ^= ) -- */
+    /*[href^="https"] {*/
+    /*    background: yellow;*/
+    /*}*/
+
+    /* -- Attribute selector with attribute ending value ( $= ) -- */
+    /*[href$=".uk"] {*/
+    /*    background: lightpink;*/
+    /*}*/
+
+    /*[href$="lk"] {*/
+    /*    background: red;*/
+    /*}*/
+
+    /* -- Attribute selector with given attribute value snippet ( *= ) -- */
+
+    /*[href*="met"] {*/
+    /*    background: mediumpurple;*/
+    /*}*/
+
+    /* -- Attribute selector with given attribute value word ( ~= ) -- */
+
+    /*[href~="met"] {*/
+    /*    background: mediumpurple;*/
+    /*}*/
+
+    /* -- Attribute selector with Type Selector -- */
+
+    /*h1[href="https://www.ijse.ac.uk"] {*/
+    /*    background: chartreuse;*/
+    /*}*/
+
+    /* -- Attribute selector with ID Selector -- */
+
+    /*#ijse[href] {*/
+    /*    background: aqua;*/
+    /*}*/
+
+    /* -- Attribute selector with Class Selector -- */
+
+    .my-institute[href] {
+      background: greenyellow;
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+
+<h1 myattr="">Hello Selectors</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam architecto aspernatur cumque debitis deleniti dolorem expedita magnam molestiae necessitatibus numquam omnis placeat porro sunt, temporibus tenetur totam, unde veniam.</p>
+
+<ol>
+  <li>
+    <a href="https://ijse.lk">IJSE</a>
+  </li>
+  <li>
+    <a href="http://www.cardiffmet.ac.uk">Cardiff Met</a>
+  </li>
+  <li>
+    <a href="https://www.bolton.ac.uk">UoBolton</a>
+  </li>
+  <li>
+    <a href="http://www.londonmet.ac.uk">London Met</a>
+  </li>
+  <li>
+    <a href="http://www.london met .ac.uk">London Met 2</a>
+  </li>
+</ol>
+
+<h1 class="my-institute" href="https://www.ijse.ac.uk">Welcome to UoIJSE 1</h1>
+
+<h1 id="ijse" href="https://www.ijse.ac.uk">Welcome to UoIJSE 2</h1>
+
+<h1 class="my-institute" href="https://www.ijse.ac.uk">Welcome to UoIJSE 3</h1>
+
+<h1 href="https://www.bolton.ac.uk">Welcome to UoBolton</h1>
+
+<h1 class="my-institute">Hello GDSE</h1>
+
+<h3 class="red-text">
+  I'm H3
+</h3>
+
+</body>
+</html>
