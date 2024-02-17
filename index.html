@@ -2,37 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CSS</title>
+    <title>04 CSS Traversing</title>
 
     <style>
+        ul>li:first-child>ol>li {
+            color: deeppink;
+        }
 
-      h3~p {
-          color: red;
-      }
+        ul>li:first-child>ol>li:first-child {
+            color: red;
+        }
 
-      h4+p {
-          color: red;
-      }
+        ul>li:first-child>ol>li:nth-child(2) {
+            color: orange;
+        }
+
+        ul>li:nth-child(2)>ol>li:first-child>ol>li:last-child {
+            color: green;
+        }
+
+        ul>li:nth-child(2)>ol>li:first-child>ol>li:nth-child(3)>ul>li:nth-child(2) {
+            color: blue;
+        }
 
     </style>
 
 </head>
 <body>
 
-    <h3>Hello 01</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-    <h4>Hello 02</h4>
-    <div>adsadsad</div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+<ul>
+    <li>
+        Java
+        <ol>
+            <li>Java Basics</li>
+            <li>JavaEE</li>
+            <li>Java Spring Boot</li>
+            <li>MySql</li>
+        </ol>
+    </li>
+    <li>
+        UI Technologies
+        <ol>
+            <li>HTML
+                <ol>
+                    <li>Introduction to HTML</li>
+                    <li>HTML Text Formatting</li>
+                    <li>
+                        HTML Multimedia
+                        <ul>
+                            <li>Add Images</li>
+                            <li>Add Videos</li>
+                            <li>Add Audios</li>
+                        </ul>
+                    </li>
+                    <li>HTML Forms</li>
+                    <li>HTML Tables</li>
+                </ol>
+            </li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ol>
+    </li>
+    <li>
+        AWS and ML
+    </li>
+</ul>
 
 </body>
 </html>
