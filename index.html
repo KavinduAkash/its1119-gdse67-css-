@@ -7,30 +7,45 @@
     <style>
 
         /*
-            Pseudo-Class Selectors - Part 2
+            Pseudo-Element Selectors
         */
-        /*li:first-child {*/
-        /*    color: red;*/
-        /*}*/
 
-        /*li:last-child {*/
-        /*    color: mediumpurple;*/
-        /*}*/
+        h1::before {
+            content: "😊";
+        }
 
-        /*li:nth-child(3) {*/
-        /*    color: orange;*/
-        /*}*/
+        h1::after {
+            content: "😂";
+        }
 
-        /*li:nth-child(4) {*/
-        /*    color: green;*/
-        /*}*/
+        h3::first-letter {
+            color: dodgerblue;
+        }
 
-        /*li:nth-last-child(5) {*/
-        /*    color: red;*/
-        /*}*/
+        p::first-line {
+            color: deeppink;
+            font-weight: bolder;
+        }
 
-        li:only-child {
-            color: orange;
+        input::placeholder {
+            color: red;
+        }
+
+        input::file-selector-button {
+            background-color: orange;
+        }
+
+        input::file-selector-button:hover {
+            background-color: green;
+        }
+
+        ::marker {
+            content: "💡";
+        }
+
+        ::selection {
+            background-color: greenyellow;
+            color: white;
         }
 
     </style>
@@ -38,24 +53,38 @@
 </head>
 <body>
 
+    <h1>Hello CSS</h1>
+
+    <h3>Welcome To IJSE</h3>
+
+
+    <form>
+        <input type="text" placeholder="Enter your ID">
+
+        <br>
+        <br>
+
+        <input type="file">
+    </form>
+
     <ul>
         <li>Java</li>
         <li>Python</li>
-        <li>Go</li>
+        <li>GO</li>
         <li>C</li>
         <li>C++</li>
         <li>C#</li>
     </ul>
 
-    <br>
-    <br>
-
-    <ul>
-        <li>Java</li>
-<!--        <li>Python</li>-->
-    </ul>
-
-
-
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci expedita ipsa maiores molestiae nemo sunt suscipit, voluptate. At dignissimos, distinctio, doloremque, fugiat molestias nam nobis placeat quod rerum tempora tempore?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci expedita ipsa maiores molestiae nemo sunt suscipit, voluptate. At dignissimos, distinctio, doloremque, fugiat molestias nam nobis placeat quod rerum tempora tempore?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci expedita ipsa maiores molestiae nemo sunt suscipit, voluptate. At dignissimos, distinctio, doloremque, fugiat molestias nam nobis placeat quod rerum tempora tempore?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci expedita ipsa maiores molestiae nemo sunt suscipit, voluptate. At dignissimos, distinctio, doloremque, fugiat molestias nam nobis placeat quod rerum tempora tempore?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci expedita ipsa maiores molestiae nemo sunt suscipit, voluptate. At dignissimos, distinctio, doloremque, fugiat molestias nam nobis placeat quod rerum tempora tempore?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci expedita ipsa maiores molestiae nemo sunt suscipit, voluptate. At dignissimos, distinctio, doloremque, fugiat molestias nam nobis placeat quod rerum tempora tempore?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci expedita ipsa maiores molestiae nemo sunt suscipit, voluptate. At dignissimos, distinctio, doloremque, fugiat molestias nam nobis placeat quod rerum tempora tempore?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci expedita ipsa maiores molestiae nemo sunt suscipit, voluptate. At dignissimos, distinctio, doloremque, fugiat molestias nam nobis placeat quod rerum tempora tempore?
+    </p>
 </body>
 </html>
