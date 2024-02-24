@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 20px;">
+<head>
+  <meta charset="UTF-8">
+  <title>08 Box Sizing</title>
+
+  <link rel="stylesheet" href="assets/normalize.css">
+
+  <style>
+    /*
+        Box Sizing
+        1) content-box
+        2) border-box
+    */
+
+    #div1 {
+      width: 500px;
+      height: 300px;
+
+      padding: 20px;
+
+      background-color: lightblue;
+      border: 10px solid dodgerblue;
+
+    }
+
+    #div2 {
+      width: 500px;
+      height: 300px;
+
+      padding: 20px;
+
+      background-color: lightpink;
+      border: 10px solid deeppink;
+
+      box-sizing: border-box;
+
+    }
+
+  </style>
+
+</head>
+<body>
+
+<div id="div1"></div>
+<div id="div2"></div>
+
+</body>
+</html>
