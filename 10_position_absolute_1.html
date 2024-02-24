@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 20px;">
+<head>
+  <meta charset="UTF-8">
+  <title>10 Positioning - Relative Position</title>
+
+  <link rel="stylesheet" href="assets/normalize.css">
+
+  <style>
+
+    section {
+      width: 1000px;
+      height: 500px;
+
+      border: 8px solid red;
+
+      position: relative;
+    }
+
+    /*#div1 {*/
+    /*    width: 100px;*/
+    /*    aspect-ratio: 1/1;*/
+    /*    background-color: dodgerblue;*/
+
+    /*    !*position: relative;*!*/
+    /*    !*left: 200px;*!*/
+    /*    !*top: 20px;*!*/
+
+    /*    !*position: absolute;*!*/
+    /*    !*left: 100px;*!*/
+    /*    !*top: 100px;*!*/
+
+    /*    !*  -- center -- *!*/
+    /*    position: absolute;*/
+    /*    right: 0;*/
+    /*    left: 0;*/
+    /*    bottom: 0;*/
+    /*    top: 0;*/
+    /*    margin: auto;*/
+
+    /*}*/
+
+    div {
+      width: 50%;
+      height: 50%;
+      position: absolute;
+    }
+
+    #div1 {
+      background-color: deeppink;
+
+    }
+
+    #div2 {
+      background-color: orange;
+      right: 0;
+    }
+
+    #div3 {
+      background-color: yellow;
+      bottom: 0;
+    }
+
+    #div4 {
+      background-color: yellowgreen;
+      right: 0;
+      bottom: 0;
+    }
+
+
+  </style>
+
+</head>
+<body>
+
+<section>
+  <div id="div1"></div>
+  <div id="div2"></div>
+  <div id="div3"></div>
+  <div id="div4"></div>
+</section>
+
+</body>
+</html>
