@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 20px;">
+<head>
+  <meta charset="UTF-8">
+  <title>09 Box Types</title>
+
+  <link rel="stylesheet" href="assets/normalize.css">
+
+  <style>
+
+    /*
+
+    There are 2 types of elements
+        1. Block level elements
+        2. Inline level elements
+
+    Box types
+    ---------
+    1. Block
+    > Content is distributed as a block
+    > get 100% parent's width
+    > vertically
+    > box model applies
+    > h1 {display: block}
+
+    2. Inline
+    > Content is distributed as a line
+    > Only get content width
+    > horizontally - No line breaks
+    > No height and width (auto x auto)
+    > h1 {display: inline}
+
+    3. Inline-block
+    > a mix of block and inline
+    > Only get content width
+    > horizontally - No line breaks
+    > box model applies
+    > h1 {display: inline-block}
+
+    */
+
+    span {
+      display: block;
+    }
+
+    div {
+      display: inline;
+    }
+
+    p {
+      display: inline-block;
+    }
+
+  </style>
+
+</head>
+<body>
+
+<span>Hello!</span>
+<span>Hi!</span>
+<span>Welcome!</span>
+
+<div>Java</div>
+<div>Python</div>
+<div>Go</div>
+
+<br>
+<br>
+
+<p>ReactJS</p>
+<p>Angular</p>
+<p>VueJS</p>
+
+
+
+</body>
+</html>
