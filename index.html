@@ -1,58 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-size: 20px;">
 <head>
     <meta charset="UTF-8">
-    <title>05 Cascade</title>
+    <title>Assignment 03 - Case 02</title>
+
+    <link rel="stylesheet" href="assets/normalize.css">
 
     <style>
-            #btn { /* (0, 1, 0, 0) */
-                color: dodgerblue;
-            }
+        header {
+            background-color: lightblue;
+            position: relative;
+            width: 100vw;
+            height: 60px;
+            padding: 10px;
+        }
 
-            .custom-btn { /* (0, 0, 1, 0) */
-                color: green;
-            }
+        header>img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
 
-            button { /* (0, 0, 0, 1) */
-                color: red;
-            }
+        header>nav {
+            height: fit-content;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
 
-            * { /* (0, 0, 0, 0) */
-                color: yellow;
-            }
+        header>nav>ul {
+            padding: 0;
+            margin: 0;
+        }
 
-            /* --------------------------------------------------------- */
-
-            h1 { /* (0, 0, 0, 1) */
-                color: red;
-            }
-
-            .h1class[name] {
-                /*
-                .h1class = (0, 0, 1, 0) [name] = (0, 0, 1, 0)
-                .h1class + [name] = (0, 0, 1, 0) + (0, 0, 1, 0) = (0, 0, 2, 0)
-                */
-                color: deeppink;
-            }
-
-            .h1class { /* (0, 0, 1, 0) */
-                color: orange;
-            }
-
-            [name] { /* (0, 0, 1, 0) */
-                color: mediumpurple;
-            }
+        header>nav>ul>li {
+            display: inline-block;
+        }
 
     </style>
 
 </head>
 <body>
 
-    <button id="btn" class="custom-btn" style="color: orange;">Click!</button> <!-- (1, 0, 0, 0) -->
-
-    <h1 class="h1class" name="hello">Hello!</h1>
-    <h1 class="h1class">Welcome!</h1>
-    <h1 name="hello">Hi!</h1>
+    <header>
+        <img src="assets/ijse.png" title="ijse.lk" alt="ijse logo" width="150">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Service</li>
+                <li>Contact</li>
+                <li>About Us</li>
+            </ul>
+        </nav>
+    </header>
 
 </body>
 </html>
