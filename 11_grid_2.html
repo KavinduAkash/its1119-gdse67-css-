@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 20px;">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Layout</title>
+
+  <link rel="stylesheet" href="assets/normalize.css">
+
+  <style>
+
+    section {
+      width: 1000px;
+      height: 500px;
+      background-color: yellow;
+
+      display: grid;
+
+      /*grid-template-columns: 1fr 1fr 1fr;*/
+      /*grid-template-rows: 1fr 1fr;*/
+
+      grid-template-columns: repeat(4, 1fr);
+      /*grid-template-rows: repeat(2, 1fr);*/
+
+    }
+
+    section>div {
+      border: 1px solid green;
+    }
+
+    section>div:first-child {
+      background-color: red;
+      grid-column: 1/3;
+    }
+    section>div:nth-child(2) {
+      background-color: yellow;
+    }
+    section>div:nth-child(3) {
+      background-color: blue;
+      grid-column: 4/5;
+      grid-row: 1/4;
+    }
+    section>div:nth-child(4) {
+      background-color: green;
+    }
+    section>div:nth-child(5) {
+      background-color: orange;
+    }
+    section>div:nth-child(6) {
+      background-color: deeppink;
+    }
+    section>div:nth-child(7) {
+      background-color: purple;
+    }
+    section>div:nth-child(8) {
+      background-color: gray;
+      grid-column: 2/4;
+    }
+    section>div:nth-child(9) {
+      background-color: greenyellow;
+    }
+    section>div:nth-child(10) {
+      background-color: brown;
+    }
+    section>div:nth-child(11) {
+      background-color: dodgerblue;
+    }
+  </style>
+
+</head>
+<body>
+
+<section>
+
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <div></div>
+  <div></div>
+
+</section>
+
+</body>
+</html>
