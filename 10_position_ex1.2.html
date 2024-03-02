@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 03 - Case 01</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .main {
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+
+        #main1 {
+            background-color: red;
+        }
+        #main2 {
+            background-color: green;
+            right: 0;
+        }
+        #main3 {
+            background-color: orange;
+            bottom: 0;
+        }
+        #main4 {
+            background-color: deeppink;
+            right: 0;
+            bottom: 0;
+        }
+
+        #mid {
+            width: 15vw;
+            aspect-ratio: 1/1;
+
+            background-color: white;
+            position: absolute;
+
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        #mid>div {
+            width: 10vw;
+            aspect-ratio: 1/1;
+            background-color: red;
+            border-radius: 100%;
+
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+
+        }
+
+        .main>div {
+            width: 15vw;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 100%;
+
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        .main>div>div {
+            width: 6vw;
+            aspect-ratio: 1/1;
+            background-color: red;
+
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        .corner {
+            width: 10vw;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            background-color: white;
+
+            position: absolute;
+        }
+
+        #corner1 {
+            top: -5vw;
+            left: -5vw;
+        }
+
+        #corner2 {
+            right: -5vw;
+            top: -5vw;
+        }
+
+        #corner3 {
+            bottom: -5vw;
+            left: -5vw;
+        }
+
+        #corner4 {
+            right: -5vw;
+            bottom: -5vw;
+        }
+
+        #corner5 {
+            left: 0;
+            right: 0;
+            top: -5vw;
+            margin: auto;
+        }
+
+        #corner6 {
+            left: 0;
+            right: 0;
+            bottom: -5vw;
+            margin: auto;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id="main1" class="main">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div id="main2" class="main">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div id="main3" class="main">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div id="main4" class="main">
+    <div>
+        <div></div>
+    </div>
+</div>
+
+<div id="mid">
+    <div></div>
+</div>
+
+<div id="corner1" class="corner"></div>
+<div id="corner2" class="corner"></div>
+<div id="corner3" class="corner"></div>
+<div id="corner4" class="corner"></div>
+<div id="corner5" class="corner"></div>
+<div id="corner6" class="corner"></div>
+
+</body>
+</html>

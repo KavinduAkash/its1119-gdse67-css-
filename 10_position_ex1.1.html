@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 20px;">
+<head>
+    <meta charset="UTF-8">
+    <title>10 Positioning - Relative Position</title>
+
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+
+        body {
+            overflow: hidden;
+        }
+
+        .squire {
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+        .squire:first-child {
+            background-color: red;
+        }
+        .squire:nth-child(2) {
+            background-color: green;
+            right: 0;
+        }
+        .squire:nth-child(3) {
+            background-color: orange;
+            bottom: 0;
+        }
+        .squire:nth-child(4) {
+            background-color: deeppink;
+            right: 0;
+            bottom: 0;
+        }
+        .squire>div {
+            width: 30%;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .squire>div>div {
+            width: 40%;
+            aspect-ratio: 1/1;
+            background-color: red;
+            position: absolute;
+
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .mid-squire {
+            width: 15vw;
+            background-color: white;
+            aspect-ratio: 1/1;
+            position: absolute;
+
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+        .mid-squire>div {
+            width: 60%;
+            aspect-ratio: 1/1;
+            background-color: red;
+            border-radius: 100%;
+            position: absolute;
+
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .corner {
+            width: 10vw;
+            aspect-ratio: 1/1;
+            background-color: white;
+            position: absolute;
+            border-radius: 100%;
+        }
+        #corner1 {
+            left: -5vw;
+            top: -5vw;
+        }
+        #corner2 {
+            right: -5vw;
+            top: -5vw;
+        }
+        #corner3 {
+            bottom: -5vw;
+            left: -5vw;
+        }
+
+        #corner4 {
+            right: -5vw;
+            bottom: -5vw;
+        }
+
+        #corner5 {
+            right: 0;
+            left: 0;
+            top: -5vw;
+            margin: auto;
+        }
+
+        #corner6 {
+            right: 0;
+            left: 0;
+            bottom: -5vw;
+            margin: auto;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="squire">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div class="squire">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div class="squire">
+    <div>
+        <div></div>
+    </div>
+</div>
+<div class="squire">
+    <div>
+        <div></div>
+    </div>
+</div>
+
+
+<div id="corner1" class="corner"></div>
+<div id="corner2" class="corner"></div>
+<div id="corner3" class="corner"></div>
+<div id="corner4" class="corner"></div>
+<div id="corner5" class="corner"></div>
+<div id="corner6" class="corner"></div>
+
+
+<div class="mid-squire">
+    <div></div>
+</div>
+
+</body>
+</html>
