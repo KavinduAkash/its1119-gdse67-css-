@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 20px;">
+<head>
+  <meta charset="UTF-8">
+  <title>14 Flex box</title>
+
+  <link rel="stylesheet" href="assets/normalize.css">
+
+  <style>
+
+    div {
+      height: 500px;
+      background: lightgrey;
+      display: flex;
+      /*flex-direction: row;*/
+      /*flex-direction: column;*/
+      /*flex-direction: row-reverse;*/
+      /*flex-direction: column-reverse;*/
+
+      justify-content: space-around; /* center, space-between, space-around, flex-start, flex-end */
+    }
+
+    div>div {
+      width: 100px;
+      aspect-ratio: 1/1;
+      border: 1px solid black;
+    }
+    div>div:first-child {
+      background: lightpink;
+    }
+    div>div:nth-child(2) {
+      background: lightblue;
+    }
+    div>div:nth-child(3) {
+      background: lightyellow;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div>
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+</div>
+
+</body>
+
+</html>
