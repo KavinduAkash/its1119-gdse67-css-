@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 20px;">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Media Queries</title>
+
+  <link rel="stylesheet" href="assets/normalize.css">
+
+  <style>
+
+    div {
+      width: 200px;
+      aspect-ratio: 1/1;
+      background: red;
+    }
+
+    /*@media all and (max-width: 1000px) and (min-width: 800px) {*/
+    /*    div {*/
+    /*        background: dodgerblue;*/
+    /*    }*/
+    /*}*/
+
+    @media all and (max-width: 1000px) {
+      div {
+        background: dodgerblue;
+      }
+    }
+
+    @media all and (max-width: 800px) {
+      div {
+        background: mediumpurple;
+      }
+    }
+
+    @media all and (max-width: 600px) {
+      div {
+        background: pink;
+      }
+    }
+
+    @media all and (max-width: 400px) {
+      div {
+        background: orange;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div></div>
+
+</body>
+
+</html>
