@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 20px;">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Animation</title>
+
+  <link rel="stylesheet" href="assets/normalize.css">
+
+  <style>
+
+    div {
+      width: 200px;
+      aspect-ratio: 1/1;
+
+
+      animation-duration: 10s;
+      animation-name: animi;
+      animation-iteration-count: infinite; /* number or infinite */
+      /*animation-delay: 5s;*/
+      /*animation-direction: alternate; !* reverse, alternate, alternate-reverse *!*/
+      animation-timing-function: linear; /* liner, ease-in, ease-out, ease-in-out */
+      animation-play-state: running; /* running, paused */
+
+      /*animation: animi 3s;*/
+    }
+
+    /*@keyframes animi {*/
+    /*   from {*/
+    /*        background-color: dodgerblue;*/
+    /*        margin-left: 0px;*/
+    /*   }*/
+    /*   to {*/
+    /*        background-color: red;*/
+    /*       margin-left: 800px;*/
+    /*   }*/
+    /*}*/
+
+    /*@keyframes animi {*/
+    /*    0% {*/
+    /*        background-image: url("https://st.depositphotos.com/1000152/1909/i/450/depositphotos_19091863-stock-photo-forest.jpg");*/
+    /*        background-size: cover;*/
+    /*        background-position: center;*/
+    /*        background-repeat: no-repeat;*/
+    /*    }*/
+    /*    25% {*/
+    /*        background-image: url("https://wallpapers.com/images/featured/forest-pictures-ghluxfda78g0i0ap.jpg");*/
+    /*        background-size: cover;*/
+    /*        background-position: center;*/
+    /*        background-repeat: no-repeat;*/
+    /*    }*/
+    /*    50% {*/
+    /*        background-image: url("https://img.freepik.com/free-photo/beautiful-shot-forest-with-tall-green-trees_181624-20615.jpg");*/
+    /*        background-size: cover;*/
+    /*        background-position: center;*/
+    /*        background-repeat: no-repeat;*/
+    /*    }*/
+    /*    75% {*/
+    /*        background-image: url("https://loveincorporated.blob.core.windows.net/contentimages/gallery/a9fb36be-f130-4f84-ab3b-363116c9c5df-Zhangjiajie_China.jpg");*/
+    /*        background-size: cover;*/
+    /*        background-position: center;*/
+    /*        background-repeat: no-repeat;*/
+    /*    }*/
+    /*    100% {*/
+    /*        background-image: url("https://www.travelandleisure.com/thmb/Ne05bVVgbqpA8FQIvI4vCifNUxA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hallerbos-forest-halle-belgium-2-BEAUTFORESTS0721-4ff5b556613e4814b5b7165f8851de39.jpg");*/
+    /*        background-size: cover;*/
+    /*        background-position: center;*/
+    /*        background-repeat: no-repeat;*/
+    /*    }*/
+    /*}*/
+
+
+    @keyframes animi {
+      0%,20% {
+        background-image: url("https://st.depositphotos.com/1000152/1909/i/450/depositphotos_19091863-stock-photo-forest.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      25%,45% {
+        background-image: url("https://wallpapers.com/images/featured/forest-pictures-ghluxfda78g0i0ap.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      50%,70% {
+        background-image: url("https://img.freepik.com/free-photo/beautiful-shot-forest-with-tall-green-trees_181624-20615.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      75%,95% {
+        background-image: url("https://loveincorporated.blob.core.windows.net/contentimages/gallery/a9fb36be-f130-4f84-ab3b-363116c9c5df-Zhangjiajie_China.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      100% {
+        background-image: url("https://www.travelandleisure.com/thmb/Ne05bVVgbqpA8FQIvI4vCifNUxA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hallerbos-forest-halle-belgium-2-BEAUTFORESTS0721-4ff5b556613e4814b5b7165f8851de39.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div></div>
+
+</body>
+
+</html>
