@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 20px;">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Transition</title>
+
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/fontawesome/fontawesome-free-6.5.1-web/css/all.min.css">
+
+    <style>
+
+        main {
+            max-width: 800px;
+            /*background: pink;*/
+            margin: auto;
+        }
+
+        /* Section 01 */
+
+        #section1 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        #section1>div {
+            width: 200px;
+            padding: 20px 15px;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            transition-duration: 1s;
+
+            cursor: pointer;
+        }
+
+        #section1>div:hover {
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+
+        #section1>div>span {
+            color: #ff253a;
+            font-size: 20px;
+        }
+
+
+        /* Section 02 */
+
+        #section2 {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            background: pink;
+        }
+
+        #section2>div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            margin: 15px auto;
+
+            background-image: url("https://st.depositphotos.com/1000152/1909/i/450/depositphotos_19091863-stock-photo-forest.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #section2>div:hover {
+            width: 110px;
+        }
+
+        /* Media Queries */
+        @media all and (max-width: 650px) {
+            #section2 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            #section2>div {
+                width: 120px;
+                height: 120px;
+            }
+            #section2>div:hover {
+                width: 150px;
+            }
+        }
+
+        @media all and (max-width: 400px) {
+            #section2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            #section2>div {
+                width: 140px;
+                height: 140px;
+            }
+            #section2>div:hover {
+                width: 180px;
+            }
+        }
+
+        @media all and (max-width: 700px) {
+            #section1 {
+                display: block;
+            }
+            #section1>div {
+                margin: 10px auto;
+            }
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+<main>
+    <section id="section1">
+
+        <div>
+            <h3>Vision</h3>
+            <span>
+                <i class="fa-solid fa-eye"></i>
+            </span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div>
+            <h3>Mission</h3>
+            <span>
+                <i class="fa-solid fa-rocket"></i>
+            </span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div>
+            <h3>Values</h3>
+            <span>
+                <i class="fa-solid fa-gem"></i>
+            </span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+    </section>
+
+    <section id="section2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+</main>
+
+<script src="assets/fontawesome/fontawesome-free-6.5.1-web/js/all.min.js"></script>
+
+</body>
+
+</html>
