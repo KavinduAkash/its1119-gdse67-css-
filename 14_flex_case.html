@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 20px;">
+<head>
+  <meta charset="UTF-8">
+  <title>14 Flex box Case</title>
+
+  <link rel="stylesheet" href="assets/normalize.css">
+
+  <style>
+
+    section {
+      border: 2px solid orangered;
+      height: 500px;
+
+      display: flex;
+      justify-content: space-around;
+    }
+
+    section>div {
+      width: 200px;
+      height: 200px;
+
+      box-shadow: 5px 5px 20px dodgerblue;
+    }
+
+    section>div:first-child {
+      background: lightpink;
+    }
+
+    section>div:nth-child(2) {
+      background: pink;
+      align-self: center;
+    }
+
+    section>div:nth-child(3) {
+      background: hotpink;
+      align-self: end;
+    }
+
+    section>div:nth-child(4) {
+      background: deeppink;
+      align-self: center;
+    }
+
+    section>div:nth-child(5) {
+      background: red;
+    }
+    section>div:nth-child(6) {
+      background: darkred;
+      align-self: center;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<section>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <div></div>
+  <div></div>
+  <div></div>
+</section>
+
+</body>
+
+</html>
